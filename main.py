@@ -1,3 +1,4 @@
+import os
 import subprocess
 import threading
 from time import sleep
@@ -6,11 +7,14 @@ import cv2
 import numpy as np
 import requests
 import RPi.GPIO as GPIO
+from dotenv import load_dotenv
+
+load_dotenv()
 
 WIDTH, HEIGHT = 640, 480
 FRAME_SIZE = int(WIDTH * HEIGHT * 1.5)
 
-SERVER_URL = "http://192.168.178.88:8000/upload_frame"
+SERVER_URL = os.environ["SERVER_URL"]
 
 # Gleiches Setup wie im Servo-Testskript: BOARD-Pins 15 & 16
 GPIO.setwarnings(False)
