@@ -13,7 +13,7 @@
   <b>6. Live Preview:</b> Hosting a local website with an MJPEG live video stream via Flask.
 </p>
 <h2>Hardware</h2>
-<p>Raspberry Pi 4 (4GB), 2x servo motor (pan/tilt), laser pointer, camera module, and a PC with an RTX 5070 for offloaded MediaPipe processing.</p>
+<p>Raspberry Pi 4 (4GB), 2x servo motor (pan/tilt), camera module and a PC with an RTX 5070 for offloaded MediaPipe processing.</p>
 <h1>My Project Website</h1>
 <p>You can explore my project website via this link: <a href="https://javinwittig.github.io/hand_tracker_website/">https://javinwittig.github.io/hand_tracker_website/</a></p>
 <p>This link leads to my GitHub repository where I built the website mentioned above: <a href="https://github.com/javinwittig/hand_tracker_website">https://github.com/javinwittig/hand_tracker_website</a></p>
@@ -23,5 +23,5 @@
 </div>
 <div align="center">
 <h3>Ai Usage</h3>
-AI Declaration: Claude for some coding and OpenCode
+AI Declaration: Claude for some coding and research and OpenCode
 </div>
