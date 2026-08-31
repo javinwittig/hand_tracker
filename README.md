@@ -23,5 +23,5 @@
 </div>
 <div align="center">
 <h3>Ai Usage</h3>
-AI Declaration: Claude for planning, coding, and documentation
+AI Declaration: Claude for some coding and OpenCode
 </div>
