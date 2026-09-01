@@ -20,14 +20,13 @@
 <h2>Hardware</h2>
     <div align="left">
 <p>Raspberry Pi 4 (4GB), 2x servo motor (pan/tilt), camera module and a PC with an RTX 5070 for offloaded MediaPipe processing.</p>
+<div align="center">
 <h1>My Project Website</h1>
+      <div align="left">
 <p>You can explore my project website via this link: <a href="https://javinwittig.github.io/hand_tracker_website/">https://javinwittig.github.io/hand_tracker_website/</a></p>
 <p>This link leads to my GitHub repository where I built the website mentioned above: <a href="https://github.com/javinwittig/hand_tracker_website">https://github.com/javinwittig/hand_tracker_website</a></p>
 <p>This link leads to the server / tracking backend repository: <a href="https://github.com/javinwittig/hantracking_server">https://github.com/javinwittig/hantracking_server</a></p>
-<h2>Contributors</h2>
-<p>Javin Wittig</p>
-</div>
-<div align="left">
+
 <h3>Ai Usage</h3>
 AI Declaration: Claude for some coding and research and OpenCode
 </div>
