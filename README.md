@@ -3,11 +3,11 @@
 <div align="center">
 <h2>Overview</h2>
   <div align="left">
-<p>This repository contains the implementation of a real-time hand-tracking laser turret. A camera mounted on a Raspberry Pi streams video to a PC, which uses MediaPipe to track the position of a hand and sends target coordinates back to the Pi, which then steers two servo motors to aim a laser pointer at the tracked hand.</p>
+<p>This repository contains a real-time hand-tracking system. A camera is mounted on a Raspberry Pi to stream video to a PC, which uses MediaPipe to track the position of a hand and sends target coordinates back to the Pi. The Pi then controls two servo motors to mimic my hand movement.</p>
 <div align="center">
   <h2>Approach</h2>
     <div align="left">
-<p>To build a responsive, low-latency tracking system, the following steps were taken:</p>
+<p>My Workflow:</p>
 <p>
   <b>1. Camera Pipeline:</b> Capturing video on the Raspberry Pi using rpicam-vid (YUV420, 640x480, 180° rotation).<br>
   <b>2. Video Streaming:</b> Streaming the camera feed from the Pi to a PC for processing.<br>
