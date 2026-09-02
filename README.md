@@ -8,6 +8,16 @@
 <p>This repository contains a real-time hand-tracking system. A camera is mounted on a Raspberry Pi to stream video to a PC, which uses MediaPipe to track the position of a hand and sends target coordinates back to the Pi. The Pi then drives two servo motors to mimic the tracked hand's movement — for example, if the hand bends forward, the servo-driven mechanism bends forward too.</p>
 
 <p>The workload is split between the two devices by design: the Pi handles video capture, streaming, and servo control, while the computationally intensive hand-tracking runs on a PC with a dedicated GPU. This keeps the Pi's load low and allows the tracking loop to run fast enough for real-time use.</p>
+<div align="center">
+<h1>My Project Website</h1>
+    <div align="left">
+
+<p>You can explore my project website via this link: <a href="https://javinwittig.github.io/hand_tracker_website/">https://javinwittig.github.io/hand_tracker_website/</a></p>
+
+<p>This link leads to my GitHub repository where I built the website mentioned above: <a href="https://github.com/javinwittig/hand_tracker_website">https://github.com/javinwittig/hand_tracker_website</a></p>
+
+<p>This link leads to the server / tracking backend repository: <a href="https://github.com/javinwittig/hantracking_server">https://github.com/javinwittig/hantracking_server</a></p>
+
 
 <div align="center">
 <h2>Features</h2>
@@ -42,17 +52,7 @@
 
 <p>Raspberry Pi 4 (4GB), 2x servo motor, camera module and a PC with an RTX 5070 for MediaPipe processing.</p>
 
-<div align="center">
-<h2>Repository Contents</h2>
-  <div align="left">
 
-<p>
-<code>main.py</code> — runs on the Pi; handles the camera pipeline and the tracking loop.<br>
-<code>servo.py</code> — drives the two servos so they mimic the tracked hand movement.<br>
-<code>requirements.txt</code> — Python dependencies.<br>
-<code>Assets/</code> — project assets.<br>
-<code>.gitignore</code> — files excluded from version control.
-</p>
 
 <div align="center">
 <h2>Getting Started</h2>
@@ -82,15 +82,7 @@ pip install -r requirements.txt</code></pre>
 4. Open the local Flask website in a browser to view the live preview.
 </p>
 
-<div align="center">
-<h1>My Project Website</h1>
-    <div align="left">
 
-<p>You can explore my project website via this link: <a href="https://javinwittig.github.io/hand_tracker_website/">https://javinwittig.github.io/hand_tracker_website/</a></p>
-
-<p>This link leads to my GitHub repository where I built the website mentioned above: <a href="https://github.com/javinwittig/hand_tracker_website">https://github.com/javinwittig/hand_tracker_website</a></p>
-
-<p>This link leads to the server / tracking backend repository: <a href="https://github.com/javinwittig/hantracking_server">https://github.com/javinwittig/hantracking_server</a></p>
 
 <h3>Ai Usage</h3>
 
