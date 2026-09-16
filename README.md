@@ -5,7 +5,7 @@ I made a project which tracks my hand in real time and mimics my hand movement o
 
 ## My Project website and other important repos
 
-You can explore my project website via this link:
+You can explore my project website via this link:https://javinwittig.github.io/hand_tracker_website/
 
 This link leads to my GitHub repository where 1 built the website mentioned above: https://github.com/javinwittig/hand.tracker.website
 
