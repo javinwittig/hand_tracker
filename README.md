@@ -9,7 +9,7 @@ You can explore my project website via this link:https://javinwittig.github.io/h
 
 This link leads to my GitHub repository where 1 built the website mentioned above: [https://github.com/javinwittig/hand.tracker.website](https://github.com/javinwittig/hand_tracker_website)
 
-This link leads to the repo where I have the backend of the project: https://github.com/javinwittig/hantracking_serve
+This link leads to the repo where I have the backend of the project:[ https://github.com/javinwittig/hantracking_serve](https://github.com/javinwittig/Handtracking_server)
 
 ## Features
 
