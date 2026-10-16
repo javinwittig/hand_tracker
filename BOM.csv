@@ -1,0 +1,10 @@
+Item,Description,Quantity,Unit Price (USD),Total Price (USD),Link,Supplier
+Raspberry Pi 4 Model B 4GB,Main computer; runs rpicam-vid camera stream and servo control,1,120.00,120.00,https://www.adafruit.com/product/4296,Adafruit
+Raspberry Pi Camera Module 3 Standard,12MP autofocus camera (75 deg); includes 200mm CSI cable,1,29.25,29.25,https://www.adafruit.com/product/5657,Adafruit
+Mini Pan-Tilt Kit (assembled with 2x micro servos),Two-axis pan/tilt mount with 2x SG-90/SG-92 type micro servos pre-installed,1,18.95,18.95,https://www.adafruit.com/product/1967,Adafruit
+Official Raspberry Pi USB-C Power Supply 5.1V 3A,US plug; powers the Pi 4 (servos powered from Pi 5V rail),1,8.74,8.74,https://www.adafruit.com/product/4298,Adafruit
+Premium Female/Male Extension Jumper Wires 20 x 6in,Connects servo plugs to Raspberry Pi GPIO header,1,1.95,1.95,https://www.adafruit.com/product/1954,Adafruit
+SanDisk microSD Card 32GB with Raspberry Pi OS,Boot drive for the Raspberry Pi,1,19.95,19.95,https://www.pishop.us/product/class-10-microsd-card-with-raspberry-pi-os-bookworm-32gb/,PiShop.us
+Shipping - Adafruit,Estimated USPS Ground Advantage (order under $200); verify in cart at checkout,1,7.50,7.50,https://www.adafruit.com/shippinginfo,Adafruit
+Shipping - PiShop.us,Estimated standard shipping; verify in cart at checkout,1,6.00,6.00,https://www.pishop.us/,PiShop.us
+TOTAL,,,,212.34,,
