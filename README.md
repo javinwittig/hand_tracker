@@ -15,7 +15,7 @@ If I develop this project further, it could help people with limited hand mobili
  
 ## Why did I make it?
  
-Since I really like Machine Learning, AI, and robotics, it was a great project for bringing all these hobbies togehter and combinding my skills.
+Since I really like Machine Learning, AI, and robotics, it was a great project for combinding all these hobbies togehter. 
 ## Demo video
  
 
