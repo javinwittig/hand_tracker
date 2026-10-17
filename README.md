@@ -10,14 +10,12 @@ I designed and assembled a hand that mimics the movements of my own hand using t
  
 ## How would it be used?
  
-This project could help people with limited hand mobility by allowing them to control a robotic hand that mimics their own movements. It could also be used for research in robotics, computer vision, and human-machine interaction.
-[Describe the use case here.]
+If I develop this project further, it could help people with limited hand mobility to control a robotic hand.
+
  
 ## Why did I make it?
  
-I really like Machine Learning and AI and I also like robotics, so i think it was a great project to combine those different hobbies into one project
-[Write your motivation here.]
- 
+Since I really like Machine Learning, AI, and robotics, it was a great project for bringing all these hobbies togehter and combinding my skills.
 ## Demo video
  
 
