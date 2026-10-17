@@ -20,8 +20,8 @@ I really like Machine Learning and AI and I also like robotics, so i think it wa
  
 ## Demo video
  
-<!-- TODO: Upload to YouTube or Reddit. Google Drive / Mega links do NOT count. -->
-https://javinwittig.github.io/hand_tracker_website/
+
+https://youtu.be/mH6msHrnt10
  
 ## Devlogs
  
