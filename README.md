@@ -1,37 +1,135 @@
 # Hand Tracker
-### overview:
-
-I made a project which tracks my hand in real time and mimics my hand movement onto a hand placed on to two servo motors, which are controlled by a rasperry pi 
-
-## My Project website and other important repos
-
-You can explore my project website via this link:https://javinwittig.github.io/hand_tracker_website/
-
-This link leads to my GitHub repository where 1 built the website mentioned above: [https://github.com/javinwittig/hand.tracker.website](https://github.com/javinwittig/hand_tracker_website)
-
-This link leads to the repo where I have the backend of the project:[ https://github.com/javinwittig/hantracking_serve](https://github.com/javinwittig/Handtracking_server)
-
-## Features
-
-The rasperry Pi tracks my hand and sends the stream to my PC, which uses Mediapipe to track the postion of the hand. After that, it sends back the target coordinates to the Pi which then drives the two servo motors to mimic the tracked hand's movement
-
-## Workflow
-
-1. Capturing the video on the Raspberry Pi#
-
-2. Stream the video to your backend, in my case my Pc
-
-3. Using Mediapipe to track the hand#s position
-
-4. Sending the calculated target coordinates from the PC back to the Pi
-
-5. Using the coordinates on the Pi to drive two servo motors that mimic the tracked hand's movement.
-
-6. Hosting a local website which then streams the video off the tracked hand
-
-
-## Hardware
-
-Rasperry Pi 4 (4GB), 2x servo motors, a camera module and a PC which can handle Mediapipe
-
-
+ 
+<!-- TODO: Add a photo of your finished, built project here. -->
+![Photo of the finished build](Assets/build_photo.jpg)
+ 
+## What is this project?
+ 
+<!-- TODO: Write 2-3 sentences in your OWN words. Example prompts:
+     - What does it do when you move your hand?
+     - What parts is it made of? -->
+[Describe your project here.]
+ 
+## How would it be used?
+ 
+<!-- TODO: Write 1-2 sentences in your OWN words. Who could use it and for what? -->
+[Describe the use case here.]
+ 
+## Why did I make it?
+ 
+<!-- TODO: Write 1-2 sentences in your OWN words. What made you start this project? -->
+[Write your motivation here.]
+ 
+## Demo video
+ 
+<!-- TODO: Upload to YouTube or Reddit. Google Drive / Mega links do NOT count. -->
+[Watch the demo on YouTube](https://youtube.com/TODO)
+ 
+## Devlogs
+ 
+<!-- TODO: Link your devlogs of the physical build. -->
+[Link to devlogs](TODO)
+ 
+---
+ 
+## Pictures
+ 
+### 3D model
+ 
+<!-- TODO: Screenshot of the full 3D model (e.g. the pan/tilt mount with camera). -->
+![3D model](Assets/3d_model.png)
+ 
+### Wiring diagram
+ 
+<!-- TODO: Add a wiring diagram (no PCB is used in this project). -->
+![Wiring diagram](Assets/wiring_diagram.png)
+ 
+### PCB
+ 
+No PCB is used in this project. All connections are wired directly to the Raspberry Pi GPIO header.
+ 
+---
+ 
+## How it works
+ 
+A camera is mounted on a Raspberry Pi and streams video to a PC. The PC tracks the hand with MediaPipe and sends target angles back to the Pi, which drives two servo motors (pan/tilt) to follow the hand.
+ 
+```
+Camera -> Raspberry Pi --(JPEG via HTTP POST)--> PC (MediaPipe)
+                       <--(JSON: found, angle_deg, roll_deg)--
+Raspberry Pi -> 2 servos (pan / tilt)
+```
+ 
+1. **Camera pipeline:** `rpicam-vid` captures YUV420 at 640x480, 15 fps, rotated 180°.
+2. **Streaming:** Each frame is encoded as JPEG and sent to the PC.
+3. **Hand tracking:** MediaPipe HandLandmarker (Tasks API, `LIVE_STREAM` mode) detects the hand.
+4. **Coordinate transmission:** The PC returns `found`, `angle_deg` and `roll_deg` as JSON.
+5. **Servo control:** The Pi converts the angles to PWM duty cycles and moves the servos smoothly.
+6. **Live preview:** A local Flask website shows an MJPEG live stream.
+## Repositories
+ 
+| Part | Link |
+|---|---|
+| Pi client (this repo) | `main.py`, `servo.py` |
+| Tracking server (PC) | https://github.com/javinwittig/hantracking_server |
+| Project website | https://javinwittig.github.io/hand_tracker_website/ |
+| Website source | https://github.com/javinwittig/hand_tracker_website |
+ 
+---
+ 
+## Requirements
+ 
+### Hardware
+ 
+| Component | Requirement |
+|---|---|
+| Single-board computer | Raspberry Pi 4 (4 GB) running Raspberry Pi OS |
+| Camera | Raspberry Pi camera module (must work with `rpicam-vid`) |
+| Servos | 2x SG90-class servo (pan and tilt) |
+| PC | Computer with a capable GPU (developed on an RTX 5070) |
+| Network | Pi and PC on the same network |
+| Power | Pi power supply; a separate 5 V supply for the servos is recommended |
+ 
+### Servo wiring
+ 
+- Pin mode: `BOARD` (physical pin numbers)
+- Servo signal wires on **pin 15** and **pin 16**
+- PWM frequency: 50 Hz
+- Duty cycle: 2.5 (-90°), 7.5 (0°), 12.5 (+90°)
+### Software on the Raspberry Pi
+ 
+- Raspberry Pi OS, Python 3, `rpicam-vid` (from `rpicam-apps`)
+- Python packages (see `requirements.txt`): `opencv-python`, `numpy`, `requests`, `RPi.GPIO`, `python-dotenv`
+```bash
+python3 -m venv --system-site-packages .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+ 
+### Software on the PC
+ 
+- Python 3, MediaPipe (HandLandmarker), Flask
+- See the `requirements.txt` of the [tracking server repo](https://github.com/javinwittig/hantracking_server)
+### Configuration
+ 
+Create a `.env` file in the project folder (it is git-ignored):
+ 
+```
+SERVER_URL=http://<PC-IP>:<port>/<path>
+```
+ 
+---
+ 
+## Run it
+ 
+1. Start the tracking server on the PC.
+2. Create the `.env` file on the Pi with the server URL.
+3. Optional servo test: `python servo.py`
+4. Start tracking: `python main.py` (stop with `Ctrl+C`)
+## Notes
+ 
+- Frames that are too dark (mean brightness < 25) are skipped, so use good lighting.
+- Adjust `PAN_ANGLE_RANGE`, `TILT_ANGLE_RANGE` and `SMOOTHING` in `main.py` to your setup.
+## AI usage
+ 
+Claude for some coding and research, and OpenCode.
