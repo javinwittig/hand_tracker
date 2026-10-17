@@ -1,18 +1,16 @@
 # Hand Tracker
  
 <!-- TODO: Add a photo of your finished, built project here. -->
-![Photo of the finished build](Assets/build_photo.jpg)
+ <img src="Assets/hand tracker.jpeg" alt="Confusion Matrix" width="500">
  
 ## What is this project?
  
-<!-- TODO: Write 2-3 sentences in your OWN words. Example prompts:
-     - What does it do when you move your hand?
-     - What parts is it made of? -->
+I designed and assembled a hand that mimics the movements of my own hand using two servo motors, a Raspberry Pi, and a camera.
 [Describe your project here.]
  
 ## How would it be used?
  
-<!-- TODO: Write 1-2 sentences in your OWN words. Who could use it and for what? -->
+This project could help people with limited hand mobility by allowing them to control a robotic hand that mimics their own movements. It could also be used for research in robotics, computer vision, and human-machine interaction.
 [Describe the use case here.]
  
 ## Why did I make it?
@@ -23,7 +21,7 @@
 ## Demo video
  
 <!-- TODO: Upload to YouTube or Reddit. Google Drive / Mega links do NOT count. -->
-[Watch the demo on YouTube](https://youtube.com/TODO)
+https://javinwittig.github.io/hand_tracker_website/
  
 ## Devlogs
  
