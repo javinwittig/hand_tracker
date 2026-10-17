@@ -23,10 +23,10 @@ https://youtu.be/mH6msHrnt10
  
 ## Devlogs
  
-<!-- TODO: Link your devlogs of the physical build. -->
-[Link to devlogs](TODO)
+https://lapse.hackclub.com/timelapse/BjjK7zdlteBl
+
  
----
+
  
 ## Pictures
  
