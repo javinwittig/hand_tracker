@@ -21,7 +21,7 @@ Since I really like Machine Learning, AI, and robotics, it was a great project f
 
 https://youtu.be/mH6msHrnt10
  
-## Devlogs
+## Devlog of assembling my handtracker
  
 https://lapse.hackclub.com/timelapse/BjjK7zdlteBl
 
