@@ -15,7 +15,7 @@ This project could help people with limited hand mobility by allowing them to co
  
 ## Why did I make it?
  
-<!-- TODO: Write 1-2 sentences in your OWN words. What made you start this project? -->
+I really like Machine Learning and AI and I also like robotics, so i think it was a great project to combine those different hobbies into one project
 [Write your motivation here.]
  
 ## Demo video
@@ -35,7 +35,7 @@ https://javinwittig.github.io/hand_tracker_website/
 ### 3D model
  
 <!-- TODO: Screenshot of the full 3D model (e.g. the pan/tilt mount with camera). -->
-![3D model](Assets/3d_model.png)
+ <img src="Assets/3D_model.png" alt="Confusion Matrix" width="500">
  
 ### Wiring diagram
  
