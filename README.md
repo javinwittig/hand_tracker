@@ -62,16 +62,11 @@ Raspberry Pi -> 2 servos (pan / tilt)
 4. **Coordinate transmission:** The PC returns `found`, `angle_deg` and `roll_deg` as JSON.
 5. **Servo control:** The Pi converts the angles to PWM duty cycles and moves the servos smoothly.
 6. **Live preview:** A local Flask website shows an MJPEG live stream.
-## Repositories
+
  
-| Part | Link |
-|---|---|
-| Pi client (this repo) | `main.py`, `servo.py` |
-| Tracking server (PC) | https://github.com/javinwittig/hantracking_server |
-| Project website | https://javinwittig.github.io/hand_tracker_website/ |
-| Website source | https://github.com/javinwittig/hand_tracker_website |
+
  
----
+
  
 ## Requirements
  
