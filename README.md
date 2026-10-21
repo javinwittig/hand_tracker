@@ -6,7 +6,7 @@
 ## What is this project?
  
 I designed and assembled a hand that mimics the movements of my own hand using two servo motors, a Raspberry Pi, and a camera.
-[Describe your project here.]
+
  
 ## How would it be used?
  
